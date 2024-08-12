@@ -1,9 +1,19 @@
-# task_management_system
+# task management system
 
-A new Flutter project.
+An intuitive task management system built using Flutter, aiming to streamline your productivity and keep your tasks fully organized in categories.
 
-## Getting Started
+## Table of Contents
 
-This project is a starting point for a Flutter application.
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Usage](#usage)
 
-A few resources to get you started if this is your first Flutter project:
+## Features
+
+- Add, edit, and delete tasks
+- Responsive and user-friendly interface
+
+## Screenshots
+
+![Home Screen]()
+![Task Details]()
