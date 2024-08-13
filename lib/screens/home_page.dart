@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:task_management_system/screens/profile_page.dart';
 import 'package:task_management_system/widgets/constant.dart';
 import 'package:task_management_system/widgets/premium.dart';
+import 'package:task_management_system/widgets/tasks.dart';
 
 class Home extends StatefulWidget {
   const Home({
@@ -135,13 +136,24 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
+        const Padding(
           padding: EdgeInsets.all(10.0),
           child: GoPremium(),
         ),
+        Container(
+          padding: const EdgeInsets.all(15),
+          child: Text(
+            'Tasks',
+            style: TextStyle(
+                fontSize: 28,
+                color: Colors.grey.shade600,
+                fontWeight: FontWeight.bold),
+          ),
+        ),
+        Expanded(child: Tasks())
       ],
     );
   }
