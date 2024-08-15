@@ -51,7 +51,7 @@ Widget _buildTask(BuildContext context, Task taskList) {
       );
     },
     child: Container(
-      padding: EdgeInsets.all(15),
+      padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
           color: taskList.bgColor, borderRadius: BorderRadius.circular(10)),
       child: Column(

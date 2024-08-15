@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_management_system/screens/menu_page.dart';
 import 'package:task_management_system/screens/profile_page.dart';
 import 'package:task_management_system/widgets/constant.dart';
 import 'package:task_management_system/widgets/premium.dart';
@@ -120,7 +121,11 @@ class _HomeState extends State<Home> {
       ),
       actions: [
         IconButton(
-            onPressed: () {},
+            onPressed: () {
+              // ignore: unnecessary_cast
+              Navigator.push(context as BuildContext,
+                  MaterialPageRoute(builder: (context) => const menuPage()));
+            },
             icon: Icon(
               Icons.more_vert,
               color: Colors.grey.shade600,
@@ -146,7 +151,7 @@ class HomePage extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(15),
           child: Text(
-            'Tasks',
+            'Categories',
             style: TextStyle(
                 fontSize: 28,
                 color: Colors.grey.shade600,

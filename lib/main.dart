@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Task Management System',
       theme: ThemeData(),
-      home: Home(),
+      home: const Home(),
     );
   }
 }

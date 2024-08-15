@@ -70,7 +70,7 @@ class GoPremium extends StatelessWidget {
                 Expanded(child: Container()),
                 IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.arrow_forward_ios,
                       color: Color.fromARGB(255, 22, 23, 22),
                       size: 30,
